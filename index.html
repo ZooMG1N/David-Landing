@@ -195,7 +195,45 @@
                 </div>
             </div>
         </section>
+
+        <section class="callback">
+            <div class="container">
+                <div class="callback-wrapper">
+                    <script id="city-list" type="text/x-handlebars-template">
+                        <h2 class="callback-title title">записаться на прием</h2>
+                        <p class="descr-callback">Позвоните в любое из наших отделений, ответим на все вопросы или запишем на прием к доктору</p>
+                        <ul class="city-list">
+                            {{#each city-list}}
+                                <li class="city-list-item"><span class="city">{{city}}</span><br>
+                                <span class="street">{{street}}</span><br>
+                                <span class="phone">{{phone}}</span></li>
+                            {{/each}}
+                        </ul>
+                        <p class="descr-callback">Заполните форму и мы свяжемся с вами, ответим на все вопросы или запишем на прием к доктору</p>
+                        <form id="callback-form" action="">
+                            <select name="" id="" class="select-department inputs">
+                                <option value="Выберите удобное для вас отделение">Выберите удобное для вас отделение</option>
+                                <option value="Ивано-Франковск">Ивано-Франковск</option>
+                                <option value="Киев">Киев</option>
+                                <option value="Львов">Львов</option>
+                            </select>
+                            <input type="text" name="user-name" class="user-name inputs" placeholder="Имя">
+                            <input type="text" name="user-phone" class="user-phone inputs" placeholder="+380">
+                            <input type="submit" class="submit" value="Отправить заявку">
+                        </form>
+                    </script>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <p class="copyright">&copy; 2016 Институт вертебрологии и реабилитации</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 <script src="js/handlebars-v4.0.11.js"></script>
