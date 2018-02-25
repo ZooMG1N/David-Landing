@@ -1,0 +1,64 @@
+@media screen and (max-width: 1024px) {
+  .header {
+    .menu {
+      &-item {
+        text-align: center;
+      }
+    }
+  }
+
+  .main {
+    .hero {
+      background-position-x: -200px;
+    }
+
+    .what {
+      .slider {
+        display: flex;
+
+        &:before {
+          left: 0;
+        }
+
+        &:after {
+          right: 0;
+        }
+
+        img {
+          margin: auto;
+          width: 75%;
+          height: 75%;
+        }
+
+        .slide1 {
+          top: 80%;
+          left: 45%;
+        }
+
+        .slide2 {
+          top: 80%;
+          left: 50%;
+        }
+
+        .slide3 {
+          top: 80%;
+          left: 55%;
+        }
+      }
+    }
+
+    .info {
+      .common-watches {
+        font-size: 1.47rem;
+      }
+    }
+
+    .cases {
+      .backache {
+        img {
+          width: 45%;
+        }
+      }
+    }
+  }
+}

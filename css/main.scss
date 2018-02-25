@@ -2,6 +2,7 @@ body * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  font-size: 100%;
 }
 
 body {
@@ -43,7 +44,6 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  //background-color: red;
 
   .logo {
     font-family: "Fregat-Bold";
@@ -203,11 +203,12 @@ body {
           align-items: center;
           justify-content: center;
           position: absolute;
+          top: 50%;
+          left: -13%;
           width: 64px;
           height: 64px;
           border: 1px solid $main-bg-color;
           border-radius: 50%;
-          transform: translate(-128px, 300px);
         }
 
         &:after {
@@ -216,37 +217,41 @@ body {
           align-items: center;
           justify-content: center;
           position: absolute;
+          top: 50%;
+          right: -13%;
           width: 64px;
           height: 64px;
           border: 1px solid $main-bg-color;
           border-radius: 50%;
-          transform: translate(1024px, -320px);
+        }
+
+        img {
+          width: 100%;
         }
 
         .pagination {
           position: absolute;
-          top: 585px;
+          top: 90%;
           width: 15px;
           height: 15px;
           border: 1px solid $white;
           border-radius: 50%;
           background-color: $white;
         }
-
         .slide1 {
           @extend .pagination;
-          left: 430px;
+          left: 44.5%;
         }
 
         .slide2 {
           @extend .pagination;
-          left: 460px;
+          left: 47.5%;
           background-color: transparent;
         }
 
         .slide3 {
           @extend .pagination;
-          left: 488px;
+          left: 50.6%;
           background-color: transparent;
         }
       }
@@ -304,7 +309,9 @@ body {
       .city-list {
         display: flex;
         justify-content: space-around;
+        width: 100%;
         list-style-type: none;
+        padding: 0;
         margin-top: 40px;
 
         &-item {
@@ -322,10 +329,10 @@ body {
             font-size: 1rem;
           }
 
-          &:nth-of-type(2) {
-            margin-left: 80px;
-            margin-right: 95px;
-          }
+          //&:nth-of-type(2) {
+          //  margin-left: 80px;
+          //  margin-right: 95px;
+          //}
         }
       }
 
@@ -469,12 +476,13 @@ body {
       .backache {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
         margin-bottom: 70px;
 
         .cases-text-content {
-          width: 568px;
+          width: 48.17%;
           transform: translateY(60px);
-          margin-right: 72px;
 
           .ache-title {
             position: relative;
@@ -504,14 +512,16 @@ body {
             }
           }
         }
+        img {
+          width: 35%;
+          order: 1;
+        }
       }
 
       .bodyache {
         @extend .backache;
 
         .cases-text-content {
-          margin-right: 0;
-          margin-left: 72px;
           order: 2;
 
           .ache-title {
@@ -569,14 +579,13 @@ body {
       .schema-text-content {
         display: flex;
         justify-content: space-between;
-        width: 79.5%;
+        width: 100%;
         margin-bottom: 18px;
 
         .doctor-consultation {
           font-family: "Fregat-Bold";
           font-size: 1.18rem;
           color: #666666;
-          margin-left: -25px;
         }
 
         .treatment-course {
@@ -596,7 +605,6 @@ body {
           font-family: "Fregat-Bold";
           font-size: 1.18rem;
           color: #666666;
-          margin-right: -110px;
 
           span {
             font-family: "PT-Sans";
@@ -609,6 +617,7 @@ body {
 
       img {
         margin-bottom: 93px;
+        width: 100%;
       }
     }
   }
@@ -728,7 +737,7 @@ body {
         width: 31.91%;
         color: $white;
         text-transform: uppercase;
-        transform: translateX(400px);
+        margin: auto;
         border: none;
         border-radius: 2px;
         background-color: $main-text-color;
@@ -756,3 +765,5 @@ body {
     }
   }
 }
+
+@import "media-queries";
