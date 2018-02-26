@@ -93,6 +93,7 @@ body {
       background-color: $main-text-color;
       opacity: 0.9;
       border-radius: 8px;
+      transition: 0.2s;
     }
   }
 }
@@ -104,7 +105,6 @@ body {
     top: 11px;
     transform: rotate(48deg);
     transition: 0.2s;
-    transition-delay: 0.2s;
   }
 
   .mid {
@@ -726,6 +726,7 @@ body {
         display: flex;
         justify-content: space-around;
         list-style-type: none;
+        padding: 0;
         margin-top: 34px;
         margin-bottom: 69px;
 
@@ -806,3 +807,4 @@ body {
 
 @import "media-queries-1024px";
 @import "media-queries-900px";
+@import "media-queries-768px";

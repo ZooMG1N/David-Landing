@@ -1,7 +1,4 @@
 @media screen and (max-width: 900px) {
-  html {
-    font-size: 88.13%;
-  }
 
   .header {
     .menu {
@@ -41,7 +38,14 @@
     .hero {
       background-position-x: -335px;
     }
+
     .what {
+      &-consultation {
+        br {
+          display: none;
+        }
+      }
+
       &-description {
         br {
           display: none;
@@ -51,12 +55,40 @@
 
     .info {
       .common-watches {
-        //font-size: 1.3rem;
+        text-align: center;
+        font-size: 1.24rem;
+      }
+    }
+
+    .schema {
+      .schema-text-content {
         text-align: center;
 
-        span {
-          //font-size: 2.3rem;
+        .doctor-consultation {
+          font-size: 0.9rem;
         }
+
+        .treatment-course {
+          font-size: 0.9rem;
+
+          span {
+            font-size: 0.85rem;
+          }
+        }
+
+        .recovery-course {
+          font-size: 0.9rem;
+
+          span {
+            font-size: 0.85rem;
+          }
+        }
+      }
+    }
+
+    .call {
+      .descr-call {
+        text-align: center;
       }
     }
 
