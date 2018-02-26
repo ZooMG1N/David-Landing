@@ -1,5 +1,48 @@
 @media screen and (max-width: 768px){
   html  {
-    font-size: 95%;
+    font-size: 85.53%;
+  }
+
+  .main {
+    .what {
+      .what-list  {
+        column-count: 1;
+      }
+    }
+
+    .schema {
+      .schema-text-content {
+        flex-direction: column;
+        text-align: left;
+
+        br {
+          display: none;
+        }
+
+        .doctor-consultation {
+          font-size: 1.18rem;
+        }
+
+        .treatment-course {
+          font-size: 1.18rem;
+
+          span {
+            font-size: 1rem;
+          }
+        }
+
+        .recovery-course {
+          font-size: 1.18rem;
+
+          span {
+            font-size: 1rem;
+          }
+        }
+      }
+      
+      img {
+        display: none;
+      }
+    }
   }
 }
