@@ -1,0 +1,66 @@
+@media screen and (max-width: 600px) {
+  .main {
+    .about  {
+      .about-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: normal;
+        height: 300px;
+      }
+    }
+
+    .what {
+      .slider {
+        &:before, &:after {
+          display: none;
+        }
+
+        img  {
+          width: 87%;
+          height: 87%;
+        }
+      }
+    }
+
+    .call {
+      .city-list {
+        flex-direction: column;
+        height: 270px;
+      }
+    }
+
+    .info {
+      .conclusion  {
+        br {
+          display: none;
+        }
+      }
+    }
+
+    .callback {
+      .descr-callback {
+        text-align: center;
+        flex-wrap: nowrap;
+      }
+
+      .city-list {
+        flex-direction: column;
+        height: 270px;
+      }
+
+      #callback-form {
+        flex-direction: column;
+        height: 400px;
+
+        .inputs {
+          width: 100%;
+        }
+
+        .submit {
+          width: 100%;
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}

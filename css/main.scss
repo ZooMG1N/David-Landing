@@ -183,7 +183,6 @@ body {
     &-wrapper {
       display: flex;
       align-items: center;
-      justify-content: space-between;
 
       .about-title {
         font-size: 1.25rem;
@@ -809,3 +808,4 @@ body {
 @import "media-queries-1024px";
 @import "media-queries-900px";
 @import "media-queries-768px";
+@import "media-queries-600px";
