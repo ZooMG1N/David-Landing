@@ -1,6 +1,7 @@
 @media screen and (max-width: 1024px) {
   .header {
     .menu {
+      display: flex;
       &-item {
         text-align: center;
       }

@@ -1,8 +1,11 @@
+html {
+  font-size: 100%;
+}
+
 body * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-size: 100%;
 }
 
 body {
@@ -80,6 +83,41 @@ body {
       text-decoration: none;
       text-transform: uppercase;
     }
+  }
+
+  .burger-menu {
+    p {
+      width: 53px;
+      height: 7px;
+      margin: 4px;
+      background-color: $main-text-color;
+      opacity: 0.9;
+      border-radius: 8px;
+    }
+  }
+}
+
+.open {
+
+  .top {
+    position: relative;
+    top: 11px;
+    transform: rotate(48deg);
+    transition: 0.2s;
+    transition-delay: 0.2s;
+  }
+
+  .mid {
+    position: relative;
+    right: -150px;
+    transition: 5s;
+  }
+
+  .bot {
+    position: relative;
+    bottom: 11px;
+    transform: rotate(-48deg);
+    transition: 0.2s ease-in-out;
   }
 }
 
@@ -766,4 +804,5 @@ body {
   }
 }
 
-@import "media-queries";
+@import "media-queries-1024px";
+@import "media-queries-900px";
