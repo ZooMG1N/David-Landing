@@ -1,0 +1,47 @@
+@media screen and (max-width: 320px){
+  html {
+    font-size: 80%;
+  }
+
+  .main {
+    .info {
+      .info-group {
+        .group-block {
+          margin-bottom: 30px;
+        }
+      }
+
+      .common-watches {
+        span {
+          font-size: 2.3rem;
+        }
+      }
+    }
+
+    .cases {
+      .backache {
+        margin-bottom: 50px;
+
+        img{
+          height: 57.5%;
+        }
+      }
+    }
+
+    .how-work {
+      .methods {
+        margin-bottom: 30px;
+
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .footer {
+    .copyright {
+      margin-left: 0;
+    }
+  }
+}
