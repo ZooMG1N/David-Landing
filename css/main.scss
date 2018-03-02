@@ -98,8 +98,11 @@ body {
   }
 }
 
-.open {
+.open-menu {
+  display: flex;
+}
 
+.open {
   .top {
     position: relative;
     top: 11px;
@@ -182,7 +185,9 @@ body {
 
     &-wrapper {
       display: flex;
+      justify-content: space-between;
       align-items: center;
+      width: 100%;
 
       .about-title {
         font-size: 1.25rem;
@@ -210,6 +215,7 @@ body {
       }
     }
   }
+
   .what {
     &-wrapper {
       display: flex;
@@ -365,11 +371,6 @@ body {
           .street {
             font-size: 1rem;
           }
-
-          //&:nth-of-type(2) {
-          //  margin-left: 80px;
-          //  margin-right: 95px;
-          //}
         }
       }
 
@@ -725,6 +726,7 @@ body {
       .city-list {
         display: flex;
         justify-content: space-around;
+        width: 100%;
         list-style-type: none;
         padding: 0;
         margin-top: 34px;
